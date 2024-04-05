@@ -2,6 +2,9 @@ let input=document.querySelector('input');
 // console.log(input);
 function creation(){
     let div=document.createElement("div");
+    console.log(2);
+    let checkbox=document.createElement('input');
+    checkbox.setAttribute('type',checbox);
     let spanContent=document.createElement('span');
     let spanImg=document.createElement('span');
     spanContent.innerText=input.value;
@@ -14,6 +17,7 @@ function creation(){
         localStorage.setItem("data", document.querySelector('#main-section').innerHTML);
         // localStorage.removeItem()
     })
+    div.appendChild(checkbox);
     div.appendChild(spanContent);
     div.appendChild(spanImg);
     div.style.margin='20px';

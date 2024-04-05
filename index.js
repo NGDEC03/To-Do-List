@@ -8,7 +8,7 @@ function creation(){
     spanContent.style.fontSize='22px'
     spanContent.style.wordBreak='break-word'
     spanContent.style.marginRight='50px'
-    spanImg.innerHTML="<span><img src='../To-Do-List/assets/cross.svg' height='30px'></span>"
+    spanImg.innerHTML="<span><img src='https://ngdec03.github.io/To-Do-List/assets/cross.svg' height='30px'></span>"
     spanImg.addEventListener('click',()=>{
         div.remove();
         localStorage.setItem("data", document.querySelector('#main-section').innerHTML);

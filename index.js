@@ -1,6 +1,6 @@
 let input=document.querySelector('input')
 // let div=document.querySelec
-console.log(input);
+// console.log(input);
 function creation(){
     let div=document.createElement('div')
     let spanContent=document.createElement('span');
@@ -14,8 +14,8 @@ function creation(){
         div.remove();
         localStorage.setItem("data", document.querySelector('#main-section').innerHTML);
     })
-    div.appendChild(spanImg);
     div.appendChild(spanContent);
+    div.appendChild(spanImg);
     div.style.margin='20px';
     div.style.display='flex';
     div.style.justifyContent='space-between';

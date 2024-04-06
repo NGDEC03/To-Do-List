@@ -1,6 +1,4 @@
 let input=document.querySelector('input')
-// let div=document.querySelec
-// console.log(input);
 function creation(){
     let div=document.createElement('div')
     let spanContent=document.createElement('span');
@@ -25,6 +23,5 @@ function creation(){
 }
 document.querySelector('button').addEventListener('click',()=>{
     creation();
-    console.log(2);
 })
 document.querySelector('#main-section').innerHTML=localStorage.getItem("data");

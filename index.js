@@ -9,10 +9,7 @@ function creation(){
     spanContent.style.wordBreak='break-word'
     spanContent.style.marginRight='50px'
     spanImg.innerHTML="<span><img src='https://ngdec03.github.io/To-Do-List/assets/cross.svg' height='30px'></span>"
-    spanImg.addEventListener('click',()=>{
-        div.remove();
-        localStorage.setItem("data", document.querySelector('#main-section').innerHTML);
-    })
+    
     div.appendChild(spanContent);
     div.appendChild(spanImg);
     div.style.margin='20px';
@@ -23,5 +20,9 @@ function creation(){
 }
 document.querySelector('button').addEventListener('click',()=>{
     creation();
+})
+spanImg.addEventListener('click',()=>{
+    div.remove();
+    localStorage.setItem("data", document.querySelector('#main-section').innerHTML);
 })
 document.querySelector('#main-section').innerHTML=localStorage.getItem("data");

@@ -6,7 +6,7 @@ function creation(){
     let spanContent=document.createElement('span');
     let spanImg=document.createElement('span');
     if(input.value!='')spanContent.innerText=input.value;
-    else alert("Please Enter Some Text")
+    else {alert("Please Enter Some Text");return;}
     spanContent.style.fontSize='22px'
     spanContent.style.wordBreak='break-word'
     spanContent.style.marginRight='50px'

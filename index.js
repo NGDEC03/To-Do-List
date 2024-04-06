@@ -1,6 +1,8 @@
 let input=document.querySelector('input')
+// let div=document.querySelec
 console.log(input);
 function creation(){
+    let div=document.createElement('div')
     let spanContent=document.createElement('span');
     let spanImg=document.createElement('span');
     spanContent.innerText=input.value;

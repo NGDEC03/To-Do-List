@@ -1,10 +1,5 @@
-let input=document.querySelector('input');
-// console.log(input);
+
 function creation(){
-    let div=document.createElement("div");
-    console.log(2);
-    let checkbox=document.createElement('input');
-    checkbox.setAttribute('type',checbox);
     let spanContent=document.createElement('span');
     let spanImg=document.createElement('span');
     spanContent.innerText=input.value;
@@ -15,11 +10,9 @@ function creation(){
     spanImg.addEventListener('click',()=>{
         div.remove();
         localStorage.setItem("data", document.querySelector('#main-section').innerHTML);
-        // localStorage.removeItem()
     })
-    div.appendChild(checkbox);
-    div.appendChild(spanContent);
     div.appendChild(spanImg);
+    div.appendChild(spanContent);
     div.style.margin='20px';
     div.style.display='flex';
     div.style.justifyContent='space-between';
@@ -28,6 +21,6 @@ function creation(){
 }
 document.querySelector('button').addEventListener('click',()=>{
     creation();
+    console.log(2);
 })
 document.querySelector('#main-section').innerHTML=localStorage.getItem("data");
-localStorage.clear();

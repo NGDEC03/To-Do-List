@@ -1,4 +1,4 @@
-
+let input=document.querySelector('input')
 function creation(){
     let spanContent=document.createElement('span');
     let spanImg=document.createElement('span');

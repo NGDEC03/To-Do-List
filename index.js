@@ -1,8 +1,11 @@
 let input=document.querySelector('input')
+let div;
+let spanContent;
+let spanImg;
 function creation(){
-    let div=document.createElement('div')
-    let spanContent=document.createElement('span');
-    let spanImg=document.createElement('span');
+    div=document.createElement('div')
+    spanContent=document.createElement('span');
+     spanImg=document.createElement('span');
     if(input.value!='')spanContent.innerText=input.value;
     else {alert("Bhai Kuch Daaliye to Sahi");return;}
     spanContent.style.fontSize='22px'

@@ -1,4 +1,5 @@
 let input=document.querySelector('input')
+console.log(input);
 function creation(){
     let spanContent=document.createElement('span');
     let spanImg=document.createElement('span');
